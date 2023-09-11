@@ -1,0 +1,155 @@
+.to-go {
+  background-color: $cerulean-blue;
+}
+
+.to-go__wrapper {
+  padding: 120px 0;
+  color: $color-default-white;
+  display: grid;
+  grid-template-columns: 50% 48%;
+  gap: 20px;
+
+  @include vp-1199 {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include vp-767 {
+    padding: 67px 0;
+  }
+}
+
+.to-go__header {
+  max-width: 498px;
+  display: flex;
+  flex-direction: column;
+
+  @include vp-1199 {
+    max-width: 100%;
+  }
+}
+
+.to-go__header h2 {
+  margin: 0 0 42px 0;
+  color: $color-default-white;
+}
+
+.to-go__header p {
+  font-family: inherit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0 0 40px 0;
+
+  @include vp-1199 {
+    line-height: 20px;
+    max-width: 75%;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    max-width: 100%;
+  }
+}
+
+.to-go__img img {
+  background-color: #82cbec;
+  border-radius: 16px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.to-go__instructions {
+  display: flex;
+  flex-direction: column;
+}
+
+.to-go__instructions p {
+  margin: 0 0 61px 0;
+  font-family: inherit;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  max-width: 373px;
+
+  @include vp-1199 {
+    font-size: 28px;
+    line-height: 28px;
+    max-width: 100%;
+  }
+
+  @include vp-767 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.to-go__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  counter-reset: to-go__list;
+
+  @include vp-1199 {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    gap: 25px 28px;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.to-go__list li {
+  padding: 25px 65px 25px 25px;
+  border: 1px solid $alabaster;
+  border-radius: 16px;
+  position: relative;
+  max-width: 478px;
+  font-family: inherit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+
+  &::before {
+    content: counter(to-go__list);
+    position: absolute;
+    top: -16px;
+    left: -22px;
+    width: 42px;
+    height: 42px;
+    background-color: $cerulean-blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 0.22px;
+    counter-increment: to-go__list;
+  }
+
+  @include vp-1199 {
+    line-height: 20px;
+    margin-left: 20px;
+    max-width: 100%;
+    padding: 20px 20px;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    margin-left: 15px;
+    padding: 20px 18px 20px 18px;
+  }
+}

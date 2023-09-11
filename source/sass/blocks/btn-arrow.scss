@@ -1,0 +1,48 @@
+.btn-arrow {
+  display: block;
+  position: relative;
+  border-radius: 50%;
+  border: none;
+  background-color: $cerulean-blue;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+
+  &:focus-visible:not(:disabled),
+  &:hover:not(:disabled) {
+    background-color: $color-default-white;
+  }
+
+  &:focus-visible:not(:disabled) svg,
+  &:hover:not(:disabled) svg {
+    stroke: $cerulean-blue;
+    transform: rotate(45deg);
+  }
+
+  &:active:not(:disabled) {
+    background-color: $color-default-white;
+  }
+
+  &:active:not(:disabled) svg {
+    transform: rotate(45deg);
+    stroke: $cerulean-blue;
+    opacity: 0.7;
+  }
+
+  &:disabled:not(:focus) {
+    background-color: $mischka;
+    opacity: 0.7;
+  }
+}
+
+.btn-arrow svg {
+  position: absolute;
+  z-index: 3;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  stroke: $color-default-white;
+}

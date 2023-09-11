@@ -3,7 +3,9 @@
 
 @import "vendor/normalize";
 // Swiper 7.4.1
-// @import "vendor/swiper";
+@import "vendor/swiper";
+// Leaflet 1.9.4
+@import "vendor/leaflet";
 
 // Global
 // ---------------------------------
@@ -14,15 +16,33 @@
 @import "global/reboot";
 @import "global/utils";
 @import "global/container";
+@import "global/data-accordion";
 
 // Blocks
 // ---------------------------------
 
 @import "blocks/btn";
+@import "blocks/btn-arrow";
+@import "blocks/swiper-toggle";
+@import "blocks/title";
 @import "blocks/modal";
 @import "blocks/custom-input";
 @import "blocks/custom-toggle";
 @import "blocks/custom-select";
+@import "blocks/header";
+@import "blocks/main-nav";
+@import "blocks/footer";
+@import "blocks/nav";
+@import "blocks/hero";
+@import "blocks/about-project";
+@import "blocks/advantages";
+@import "blocks/programs";
+@import "blocks/to-go";
+@import "blocks/news";
+@import "blocks/faq";
+@import "blocks/reviews";
+@import "blocks/contacts";
+@import "blocks/feedback";
 
 // ---------------------------------
 
