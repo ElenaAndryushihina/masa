@@ -17,14 +17,6 @@
   }
 }
 
-.wrapper.overlay-dark::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: $overlay-dark;
-  z-index: 10;
-}
-
 .rouble {
   font-family: $ff-rouble;
   /* stylelint-disable */
@@ -58,6 +50,15 @@
 
 .scroll-lock {
   overflow: hidden;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: $overlay-dark;
+    z-index: 10;
+  }
 }
 
 .no-scrollbar {

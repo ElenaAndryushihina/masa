@@ -12,6 +12,7 @@
   @include vp-767 {
     right: 15px;
     left: 15px;
+    top: 20px;
   }
 }
 
@@ -39,6 +40,7 @@
   transition:
     color $trans-default,
     background-color $trans-default;
+  transform: scale(1);
 
   &::after {
     position: absolute;
@@ -119,6 +121,8 @@
   max-height: 398px;
   overflow-y: auto;
   transition: all $trans-default;
+  visibility: visible;
+  transform: scale(1);
 
   .main-nav__link--current {
     color: rgba($color-default-white, 1);
@@ -208,6 +212,7 @@
   }
 
   .main-nav__toggle {
+    transform: scale(1);
     width: 286px;
     text-align: start;
     color: $color-default-white;
@@ -266,7 +271,8 @@
 }
 
 .main-nav.is-close .main-nav__list {
-  display: none;
+  visibility: hidden;
+  transform: scale(0);
 }
 
 .main-nav.is-open .main-nav__list,

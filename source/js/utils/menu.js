@@ -2,7 +2,7 @@ const initMenu = function () {
   const navMain = document.querySelector('[data-nav]');
   const navToggle = document.querySelector('.main-nav__toggle');
   const navLinks = document.querySelectorAll('.main-nav__link');
-  const wrapper = document.querySelector('.wrapper');
+  const logo = document.querySelector('.header__logo');
 
   navMain.classList.remove('no-js');
   navMain.classList.add('is-close');
@@ -11,7 +11,7 @@ const initMenu = function () {
     if (navMain.classList.contains('is-close')) {
       navMain.classList.remove('is-close');
       navMain.classList.add('is-open');
-      wrapper.classList.add('overlay-dark');
+      logo.classList.add('is-dark');
       window.scrollLock.disableScrolling();
       document.addEventListener('click', clickOutsideMenu);
       document.addEventListener('keydown', escapePress);
@@ -23,7 +23,7 @@ const initMenu = function () {
       navMain.classList.remove('is-open');
       navMain.classList.add('is-close');
       window.scrollLock.enableScrolling();
-      wrapper.classList.remove('overlay-dark');
+      logo.classList.remove('is-dark');
       document.removeEventListener('click', clickOutsideMenu);
       document.removeEventListener('keydown', escapePress);
     }

@@ -9,6 +9,7 @@ import {initProgramsSwiper} from './modules/sliders/init-slider-programs';
 import {initNewsSwiper} from './modules/sliders/init-slider-news';
 import {initReviewsSwiper} from './modules/sliders/init-slider-reviews';
 import {initContactsMap} from './modules/maps/init-contacts-map';
+import {initFilter} from './modules/filter/init-filter';
 
 // ---------------------------------
 
@@ -33,6 +34,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initNewsSwiper();
     initReviewsSwiper();
     initContactsMap();
+    initFilter();
     const form = new Form();
     window.form = form;
     form.init();

@@ -15,6 +15,33 @@
   grid-template-columns: repeat(2, 50%);
   padding-top: 30px;
   position: relative;
+
+  @include vp-767 {
+    padding-top: 20px;
+  }
+}
+
+.header__logo {
+  width: fit-content;
+  height: fit-content;
+}
+
+.header__logo.is-dark {
+  z-index: -1;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background-color: $overlay-dark;
+    z-index: 10;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
 }
 
 .header__logo a {

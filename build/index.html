@@ -50,10 +50,10 @@
                 </a>
                 <ul class="main-nav__sub-list" data-accordion="content">
                   <li class="main-nav__item">
-                    <a class="main-nav__link main-nav__link--current" href="#">Стажировки</a>
+                    <a class="main-nav__link main-nav__link--current" href="#internships">Стажировки</a>
                   </li>
                   <li class="main-nav__item">
-                    <a class="main-nav__link" href="#">Волонтёрство</a>
+                    <a class="main-nav__link" href="#volunteering">Волонтёрство</a>
                   </li>
                   <li class="main-nav__item">
                     <a class="main-nav__link" href="#">Учёба</a>
@@ -64,10 +64,10 @@
                 </ul>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link" class="main-nav__link" href="#to-go">Как поехать</a>
+                <a class="main-nav__link" href="#to-go">Как поехать</a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link" class="main-nav__link" href="#reviews">Отзывы</a>
+                <a class="main-nav__link" href="#reviews">Отзывы</a>
               </li>
               <li class="main-nav__item accordion" data-accordion="element">
                 <a class="accordion__link" href="#" data-accordion="button">
@@ -78,19 +78,19 @@
                 </a>
                 <ul class="main-nav__sub-list" data-accordion="content">
                   <li class="main-nav__item">
-                    <a class="main-nav__link" href="#">Общее</a>
+                    <a class="main-nav__link" href="#general">Общее</a>
                   </li>
                   <li class="main-nav__item">
-                    <a class="main-nav__link" href="#">Волонтёрство</a>
+                    <a class="main-nav__link" href="#volunteering">Волонтёрство</a>
                   </li>
                   <li class="main-nav__item">
-                    <a class="main-nav__link" href="#">Стажировки</a>
+                    <a class="main-nav__link" href="#internships">Стажировки</a>
                   </li>
                   <li class="main-nav__item">
-                    <a class="main-nav__link" href="#">Карьера</a>
+                    <a class="main-nav__link" href="#career">Карьера</a>
                   </li>
                   <li class="main-nav__item">
-                    <a class="main-nav__link" href="#">Путешествия</a>
+                    <a class="main-nav__link" href="#travelling">Путешествия</a>
                   </li>
                 </ul>
               </li>
@@ -365,8 +365,8 @@
                     </div>
                   </article>
                 </div>
-                 <!-- Слайд 5 -->
-                 <div class="programs__slide swiper-slide">
+                <!-- Слайд 5 -->
+                <div class="programs__slide swiper-slide">
                   <div class="programs__img">
                     <picture>
                       <source type="image/webp" media="(max-width: 767px)" srcset="./img/programs-card-2-mobile.webp 1x, ./img/programs-card-2-mobile@2x.webp 2x">
@@ -468,24 +468,24 @@
         <div class="container">
           <div class="news__wrapper">
             <h2 class="title">Новости и&nbsp;материалы</h2>
-            <div class="news__sorting">
-              <button class="news__button is-active" type="button" data-sort="general">Общее</button>
-              <button class="news__button" type="button" data-sort="volunteering">Волонтёрство</button>
-              <button class="news__button" type="button" data-sort="internships">Стажировки</button>
-              <button class="news__button" type="button" data-sort="career">Карьера</button>
-              <button class="news__button" type="button" data-sort="travelling">Путешествия</button>
+            <div class="news__filter">
+              <button class="news__button is-active" type="button" data-filter="general">Общее</button>
+              <button class="news__button" type="button" data-filter="volunteering">Волонтёрство</button>
+              <button class="news__button" type="button" data-filter="internships">Стажировки</button>
+              <button class="news__button" type="button" data-filter="career">Карьера</button>
+              <button class="news__button" type="button" data-filter="travelling">Путешествия</button>
             </div>
             <div class="news__swiper">
               <div class="news__list swiper-wrapper">
                 <!-- Слайд 1 -->
-                <div class="news__card swiper-slide" data-sort="internships">
+                <div class="news__card news__card--internships internships swiper-slide">
                   <div class="news__img">
                     <picture>
-                      <source type="image/webp" media="(max-width: 767px)" srcset="./img/news-card-1-mobile.webp 1x, ./img/news-card-1-mobile@2x.webp 2x">
-                      <source type="image/webp" media="(max-width: 1199px)" srcset="./img/news-card-1-tablet.webp 1x, ./img/news-card-1-tablet@2x.webp 2x">
-                      <source type="image/webp" srcset="./img/news-card-1-desktop.webp 1x, ./img/news-card-1-desktop@2x.webp 2x">
-                      <source media="(max-width: 767px)" srcset="./img/news-card-1-mobile.jpg 1x, ./img/news-card-1-mobile@2x.jpg 2x">
-                      <source media="(max-width: 1199px)" srcset="./img/news-card-1-tablet.jpg 1x, ./img/news-card-1-tablet@2x.jpg 2x">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="./img/news-card-1-mobile.webp 1x, ./img/news-card-1-mobile@2x.webp 2x" width="290" height="330">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="./img/news-card-1-tablet.webp 1x, ./img/news-card-1-tablet@2x.webp 2x" width="324" height="350">
+                      <source type="image/webp" srcset="./img/news-card-1-desktop.webp 1x, ./img/news-card-1-desktop@2x.webp 2x" width="604" height="400">
+                      <source media="(max-width: 767px)" srcset="./img/news-card-1-mobile.jpg 1x, ./img/news-card-1-mobile@2x.jpg 2x"  width="290" height="330">
+                      <source media="(max-width: 1199px)" srcset="./img/news-card-1-tablet.jpg 1x, ./img/news-card-1-tablet@2x.jpg 2x" width="324" height="350">
                       <img src="./img/news-card-1-desktop.jpg" width="604" height="400" srcset="./img/news-card-1-desktop@2x.jpg 2x" alt="Фото Интервью" loading="lazy">
                     </picture>
                   </div>
@@ -494,23 +494,23 @@
                     <h3>Интервью с&nbsp;участницей программы стажировки</h3>
                     <div class="news__bottom">
                       <p>Саша рассказывает, как попала в&nbsp;программу и&nbsp;как прошла 6-месячная стажировка в&nbsp;ISOFound</p>
-                      <button class="btn-arrow" aria-label="Перейти на страницу всех новостей">
+                      <a class="btn-arrow" href="#" aria-label="Перейти на страницу всех новостей">
                         <svg width="10" height="10">
                           <use href="./img/sprite.svg#icon-arrow-btn"></use>
                         </svg>
-                      </button>
+                      </a>
                     </div>
                   </article>
                 </div>
                 <!-- Слайд 2 -->
-                <div class="news__card swiper-slide" data-sort="travelling">
+                <div class="news__card travelling swiper-slide">
                   <div class="news__img">
                     <picture>
-                      <source type="image/webp" media="(max-width: 767px)" srcset="./img/news-card-2-mobile.webp 1x, ./img/news-card-2-mobile@2x.webp 2x">
-                      <source type="image/webp" media="(max-width: 1199px)" srcset="./img/news-card-2-tablet.webp 1x, ./img/news-card-2-tablet@2x.webp 2x">
-                      <source type="image/webp" srcset="./img/news-card-2-desktop.webp 1x, ./img/news-card-2-desktop@2x.webp 2x">
-                      <source media="(max-width: 767px)" srcset="./img/news-card-2-mobile.jpg 1x, ./img/news-card-2-mobile@2x.jpg 2x">
-                      <source media="(max-width: 1199px)" srcset="./img/news-card-2-tablet.jpg 1x, ./img/news-card-2-tablet@2x.jpg 2x">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="./img/news-card-2-mobile.webp 1x, ./img/news-card-2-mobile@2x.webp 2x" width="279" height="145">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="./img/news-card-2-tablet.webp 1x, ./img/news-card-2-tablet@2x.webp 2x" width="324" height="350">
+                      <source type="image/webp" srcset="./img/news-card-2-desktop.webp 1x, ./img/news-card-2-desktop@2x.webp 2x" width="286" height="400">
+                      <source media="(max-width: 767px)" srcset="./img/news-card-2-mobile.jpg 1x, ./img/news-card-2-mobile@2x.jpg 2x" width="279" height="145">
+                      <source media="(max-width: 1199px)" srcset="./img/news-card-2-tablet.jpg 1x, ./img/news-card-2-tablet@2x.jpg 2x" width="324" height="350">
                       <img src="./img/news-card-2-desktop.jpg" width="286" height="400" srcset="./img/news-card-2-desktop@2x.jpg 2x" alt="Фото набережной" loading="lazy">
                     </picture>
                   </div>
@@ -519,21 +519,21 @@
                     <h3>Путешествуем по&nbsp;Израилю</h3>
                     <div class="news__bottom">
                       <p>Какие места посещают наши студенты весной</p>
-                      <button class="btn-arrow" aria-label="Перейти на страницу всех новостей">
+                      <a class="btn-arrow" href="#" aria-label="Перейти на страницу всех новостей">
                         <svg width="10" height="10">
                           <use href="./img/sprite.svg#icon-arrow-btn"></use>
                         </svg>
-                      </button>
+                      </a>
                     </div>
                   </article>
                 </div>
                 <!-- Слайд 3 -->
-                <div class="news__card swiper-slide" data-sort="volunteering">
+                <div class="news__card volunteering swiper-slide">
                   <div class="news__img">
                     <picture>
-                      <source type="image/webp" media="(max-width: 1199px)" srcset="./img/news-card-3-tablet.webp 1x, ./img/news-card-3-tablet@2x.webp 2x">
-                      <source type="image/webp" srcset="./img/news-card-3-desktop.webp 1x, ./img/news-card-3-desktop@2x.webp 2x">
-                      <source media="(max-width: 1199px)" srcset="./img/news-card-3-tablet.jpg 1x, ./img/news-card-3-tablet@2x.jpg 2x">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="./img/news-card-3-tablet.webp 1x, ./img/news-card-3-tablet@2x.webp 2x" width="324" height="350">
+                      <source type="image/webp" srcset="./img/news-card-3-desktop.webp 1x, ./img/news-card-3-desktop@2x.webp 2x" width="286" height="400">
+                      <source media="(max-width: 1199px)" srcset="./img/news-card-3-tablet.jpg 1x, ./img/news-card-3-tablet@2x.jpg 2x" width="324" height="350">
                       <img src="./img/news-card-3-desktop.jpg" width="286" height="400" srcset="./img/news-card-3-desktop@2x.jpg 2x" alt="Фото Волонтёрство" loading="lazy">
                     </picture>
                   </div>
@@ -542,23 +542,21 @@
                     <h3>Новая программа волонтёрства</h3>
                     <div class="news__bottom">
                       <p>Программа помощи детям длительностью 4&nbsp;месяца</p>
-                      <button class="btn-arrow" aria-label="Перейти на страницу всех новостей">
+                      <a class="btn-arrow" href="#" aria-label="Перейти на страницу всех новостей">
                         <svg width="10" height="10">
                           <use href="./img/sprite.svg#icon-arrow-btn"></use>
                         </svg>
-                      </button>
+                      </a>
                     </div>
                   </article>
                 </div>
                 <!-- Слайд 4 -->
-                <div class="news__card swiper-slide" data-sort="career">
+                <div class="news__card news__card--career career swiper-slide">
                   <div class="news__img">
                     <picture>
-                      <source type="image/webp" media="(max-width: 767px)" srcset="./img/news-card-4-mobile.webp 1x, ./img/news-card-4-mobile@2x.webp 2x">
-                      <source type="image/webp" media="(max-width: 1199px)" srcset="./img/news-card-4-tablet.webp 1x, ./img/news-card-4-tablet@2x.webp 2x">
-                      <source type="image/webp" srcset="./img/news-card-4-desktop.webp 1x, ./img/news-card-4-desktop@2x.webp 2x">
-                      <source media="(max-width: 767px)" srcset="./img/news-card-4-mobile.jpg 1x, ./img/news-card-4-mobile@2x.jpg 2x">
-                      <source media="(max-width: 1199px)" srcset="./img/news-card-4-tablet.jpg 1x, ./img/news-card-4-tablet@2x.jpg 2x">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="./img/news-card-4-tablet.webp 1x, ./img/news-card-4-tablet@2x.webp 2x" width="324" height="350">
+                      <source type="image/webp" srcset="./img/news-card-4-desktop.webp 1x, ./img/news-card-4-desktop@2x.webp 2x" width="286" height="400">
+                      <source media="(max-width: 1199px)" srcset="./img/news-card-4-tablet.jpg 1x, ./img/news-card-4-tablet@2x.jpg 2x" width="324" height="350">
                       <img src="./img/news-card-4-desktop.jpg" width="286" height="400" srcset="./img/news-card-4-desktop@2x.jpg 2x" alt="Фото Карьера" loading="lazy">
                     </picture>
                   </div>
@@ -567,11 +565,107 @@
                     <h3>Построй свою карьеру</h3>
                     <div class="news__bottom">
                       <p>Ведущие компании готовы трудоустроить выпускников стажировки</p>
-                      <button class="btn-arrow" aria-label="Перейти на страницу всех новостей">
+                      <a class="btn-arrow" href="#" aria-label="Перейти на страницу всех новостей">
                         <svg width="10" height="10">
                           <use href="./img/sprite.svg#icon-arrow-btn"></use>
                         </svg>
-                      </button>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+                <!-- Слайд 5 -->
+                <div class="news__card travelling swiper-slide">
+                  <div class="news__img">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="./img/news-card-2-mobile.webp 1x, ./img/news-card-2-mobile@2x.webp 2x" width="279" height="145">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="./img/news-card-2-tablet.webp 1x, ./img/news-card-2-tablet@2x.webp 2x" width="324" height="350">
+                      <source type="image/webp" srcset="./img/news-card-2-desktop.webp 1x, ./img/news-card-2-desktop@2x.webp 2x" width="286" height="400">
+                      <source media="(max-width: 767px)" srcset="./img/news-card-2-mobile.jpg 1x, ./img/news-card-2-mobile@2x.jpg 2x" width="279" height="145">
+                      <source media="(max-width: 1199px)" srcset="./img/news-card-2-tablet.jpg 1x, ./img/news-card-2-tablet@2x.jpg 2x" width="324" height="350">
+                      <img src="./img/news-card-2-desktop.jpg" width="286" height="400" srcset="./img/news-card-2-desktop@2x.jpg 2x" alt="Фото набережной" loading="lazy">
+                    </picture>
+                  </div>
+                  <article class="news__text">
+                    <time datetime="2023-03-23">20/03/2023</time>
+                    <h3>Путешествуем по&nbsp;Израилю</h3>
+                    <div class="news__bottom">
+                      <p>Какие места посещают наши студенты весной</p>
+                      <a class="btn-arrow" href="#" aria-label="Перейти на страницу всех новостей">
+                        <svg width="10" height="10">
+                          <use href="./img/sprite.svg#icon-arrow-btn"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+                <!-- Слайд 6 -->
+                <div class="news__card volunteering swiper-slide">
+                  <div class="news__img">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="./img/news-card-3-tablet.webp 1x, ./img/news-card-3-tablet@2x.webp 2x" width="324" height="350">
+                      <source type="image/webp" srcset="./img/news-card-3-desktop.webp 1x, ./img/news-card-3-desktop@2x.webp 2x" width="286" height="400">
+                      <source media="(max-width: 1199px)" srcset="./img/news-card-3-tablet.jpg 1x, ./img/news-card-3-tablet@2x.jpg 2x" width="324" height="350">
+                      <img src="./img/news-card-3-desktop.jpg" width="286" height="400" srcset="./img/news-card-3-desktop@2x.jpg 2x" alt="Фото Волонтёрство" loading="lazy">
+                    </picture>
+                  </div>
+                  <article class="news__text">
+                    <time datetime="2023-03-23">17/03/2023</time>
+                    <h3>Новая программа волонтёрства</h3>
+                    <div class="news__bottom">
+                      <p>Программа помощи детям длительностью 4&nbsp;месяца</p>
+                      <a class="btn-arrow" href="#" aria-label="Перейти на страницу всех новостей">
+                        <svg width="10" height="10">
+                          <use href="./img/sprite.svg#icon-arrow-btn"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+                <!-- Слайд 7 -->
+                <div class="news__card career swiper-slide">
+                  <div class="news__img">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="./img/news-card-4-tablet.webp 1x, ./img/news-card-4-tablet@2x.webp 2x" width="324" height="350">
+                      <source type="image/webp" srcset="./img/news-card-4-desktop.webp 1x, ./img/news-card-4-desktop@2x.webp 2x" width="286" height="400">
+                      <source media="(max-width: 1199px)" srcset="./img/news-card-4-tablet.jpg 1x, ./img/news-card-4-tablet@2x.jpg 2x" width="324" height="350">
+                      <img src="./img/news-card-4-desktop.jpg" width="286" height="400" srcset="./img/news-card-4-desktop@2x.jpg 2x" alt="Фото Карьера" loading="lazy">
+                    </picture>
+                  </div>
+                  <article class="news__text">
+                    <time datetime="2023-03-23">10/03/2023</time>
+                    <h3>Построй свою карьеру</h3>
+                    <div class="news__bottom">
+                      <p>Ведущие компании готовы трудоустроить выпускников стажировки</p>
+                      <a class="btn-arrow" href="#" aria-label="Перейти на страницу всех новостей">
+                        <svg width="10" height="10">
+                          <use href="./img/sprite.svg#icon-arrow-btn"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+                <!-- Слайд 8 -->
+                <div class="news__card internships swiper-slide">
+                  <div class="news__img">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="./img/news-card-1-mobile.webp 1x, ./img/news-card-1-mobile@2x.webp 2x" width="290" height="330">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="./img/news-card-1-tablet.webp 1x, ./img/news-card-1-tablet@2x.webp 2x" width="324" height="350">
+                      <source type="image/webp" srcset="./img/news-card-1-desktop.webp 1x, ./img/news-card-1-desktop@2x.webp 2x" width="604" height="400">
+                      <source media="(max-width: 767px)" srcset="./img/news-card-1-mobile.jpg 1x, ./img/news-card-1-mobile@2x.jpg 2x"  width="290" height="330">
+                      <source media="(max-width: 1199px)" srcset="./img/news-card-1-tablet.jpg 1x, ./img/news-card-1-tablet@2x.jpg 2x" width="324" height="350">
+                      <img src="./img/news-card-1-desktop.jpg" width="604" height="400" srcset="./img/news-card-1-desktop@2x.jpg 2x" alt="Фото Интервью" loading="lazy">
+                    </picture>
+                  </div>
+                  <article class="news__text">
+                    <time datetime="2023-03-23">23/03/2023</time>
+                    <h3>Интервью с&nbsp;участницей программы стажировки</h3>
+                    <div class="news__bottom">
+                      <p>Саша рассказывает, как попала в&nbsp;программу и&nbsp;как прошла 6-месячная стажировка в&nbsp;ISOFound</p>
+                      <a class="btn-arrow" href="#" aria-label="Перейти на страницу всех новостей">
+                        <svg width="10" height="10">
+                          <use href="./img/sprite.svg#icon-arrow-btn"></use>
+                        </svg>
+                      </a>
                     </div>
                   </article>
                 </div>
@@ -690,10 +784,10 @@
                       </li>
                     </ul>
                   </div>
-                  <article class="reviews__text">
+                  <div class="reviews__text">
                     <b>Я&nbsp;могу с&nbsp;уверенностью сказать, что это был один из&nbsp;самых незабываемых опытов в&nbsp;жизни!</b>
                     <p>Я&nbsp;рекомендую программу &laquo;Маса&raquo; всем израильским студентам, желающим получить незабываемые впечатления. Сочетание путешествий, общения и&nbsp;значимой работы действительно отличает её&nbsp;от&nbsp;других программ, и&nbsp;я&nbsp;чувствую огромную благодарность за&nbsp;предоставленную мне возможность.</p>
-                  </article>
+                  </div>
                 </div>
                 <!-- Слайд 2 -->
                 <div class="reviews__card swiper-slide">
@@ -720,10 +814,10 @@
                       </li>
                     </ul>
                   </div>
-                  <article class="reviews__text">
+                  <div class="reviews__text">
                     <b>Благодаря опыту стажировки я&nbsp;узнал так много нового о&nbsp;себе и&nbsp;об&nbsp;окружающем мире.</b>
                     <p>Каждый день был возможностью оказать ощутимое влияние на&nbsp;жизнь других людей. Я&nbsp;бы очень рекомендовал эту волонтерскую программу всем, кто ищет значимый и&nbsp;незабываемый опыт. Организация была на&nbsp;высшем уровне. Для меня было честью быть частью такой удивительной инициативы.</p>
-                  </article>
+                  </div>
                 </div>
                 <!-- Слайд 3 -->
                 <div class="reviews__card swiper-slide">
@@ -750,10 +844,10 @@
                       </li>
                     </ul>
                   </div>
-                  <article class="reviews__text">
+                  <div class="reviews__text">
                     <b>Я&nbsp;могу с&nbsp;уверенностью сказать, что это был один из&nbsp;самых незабываемых опытов в&nbsp;жизни!</b>
                     <p>Я&nbsp;рекомендую программу &laquo;Маса&raquo; всем израильским студентам, желающим получить незабываемые впечатления. Сочетание путешествий, общения и&nbsp;значимой работы действительно отличает её&nbsp;от&nbsp;других программ, и&nbsp;я&nbsp;чувствую огромную благодарность за&nbsp;предоставленную мне возможность.</p>
-                  </article>
+                  </div>
                 </div>
               </div>
             </div>
@@ -779,7 +873,7 @@
       <section class="contacts" id="contacts">
         <div class="container">
           <div class="contacts__wrapper">
-            <article class="contacts__text">
+            <div class="contacts__text">
               <h2 class="title">Контакты</h2>
               <ul class="contacts__list">
                 <li class="contacts__item">
@@ -795,7 +889,7 @@
                   <a href="mailto:info@masa.ru">Info@masa.ru</a>
                 </li>
               </ul>
-            </article>
+            </div>
             <div class="contacts__map" id="os-map">
               <picture>
                 <source type="image/webp" media="(max-width: 767px)" srcset="./img/map-mobile.webp 1x, ./img/map-mobile@2x.webp 2x">
@@ -856,7 +950,7 @@
                 </div>
                 <div class="custom-toggle custom-toggle--checkbox" data-validate-type="checkbox" data-required>
                   <label>
-                    <input type="checkbox" value="user-agreement" name="user-agreement" checked>
+                    <input type="checkbox" value="user-agreement" name="user-agreement">
                     <span class="custom-toggle__icon">
                       <svg width="8" height="6">
                         <use href="./img/sprite.svg#icon-checked"></use>
@@ -979,7 +1073,7 @@
             </div>
             <div class="custom-toggle custom-toggle--modal custom-toggle--checkbox" data-validate-type="checkbox" data-required>
               <label>
-                <input class="visually-hidden" type="checkbox" value="user-agreement" name="user-agreement" checked>
+                <input class="visually-hidden" type="checkbox" value="user-agreement" name="user-agreement">
                 <span class="custom-toggle__icon">
                   <svg width="8" height="6">
                     <use href="./img/sprite.svg#icon-checked"></use>

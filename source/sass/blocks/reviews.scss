@@ -96,6 +96,15 @@
   }
 }
 
+.reviews__avatar img {
+  background-color: #9ab9ca;
+  display: block;
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 .reviews__info {
   display: grid;
   grid-template-columns: auto auto;
