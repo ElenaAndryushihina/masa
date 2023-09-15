@@ -5,10 +5,19 @@
   font-weight: 400;
   display: flex;
   width: 100%;
-  padding: 22px 0 25px 30px;
+  padding: 25px 0 25px 30px;
+
+  @include vp-767 {
+    line-height: 14px;
+    padding: 20px 0 25px 30px;
+  }
 
   &:last-of-type {
-    padding: 22px 0 45px 30px;
+    padding: 25px 0 43px 30px;
+
+    @include vp-767 {
+      padding: 20px 0 30px 30px;
+    }
   }
 
   label {
@@ -82,6 +91,10 @@
       transition: all $trans-default;
       cursor: pointer;
 
+      @include vp-767 {
+        top: 24px;
+      }
+
       svg {
         display: none;
         position: absolute;
@@ -111,6 +124,20 @@
 }
 
 .custom-toggle--modal {
+  padding: 25px 0 32px 30px;
+
+  @include vp-767 {
+    padding: 25px 0 32px 30px;
+  }
+
+  &:last-of-type {
+    padding: 16px 0 24px 30px;
+
+    @include vp-767 {
+      padding: 16px 0 24px 30px;
+    }
+  }
+
   label {
     &:has(input:disabled) {
       pointer-events: none;
@@ -138,6 +165,11 @@
   input + .custom-toggle__icon {
     background-color: $color-default-white;
     border-color: rgba($cerulean-blue, 0.7);
+
+    @include vp-767 {
+      top: 19px;
+      left: 0;
+    }
 
     svg {
       stroke: $cerulean-blue;

@@ -1,6 +1,6 @@
 .nav {
   @include vp-1199 {
-    grid-column: 2/4;
+    margin-left: auto;
   }
 
   @include vp-767 {
@@ -10,16 +10,14 @@
 }
 
 .nav__list {
-  padding: 20px 52px 0 52px;
+  padding: 13px 52px 0 52px;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 
   @include vp-1199 {
-    width: 528px;
-    padding: 15px 0 0 0;
-    margin-left: 98px;
-    gap: 15px;
+    padding: 14px 0 0 0;
+    gap: 15.5px;
   }
 
   @include vp-767 {
@@ -27,6 +25,7 @@
     width: 100%;
     padding: 0;
     margin: 0;
+    gap: 6px 30px;
   }
 }
 

@@ -28,12 +28,12 @@
             </a>
           </div>
           <nav class="header__nav main-nav no-js" data-nav>
-            <button class="main-nav__toggle toggle" type="button" aria-label="Открыть меню">
+            <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
               меню
-              <svg class="toggle__burger" width="18" height="8">
+              <svg class="toggle-burger" width="18" height="8">
                 <use href="/img/sprite.svg#icon-menu-burger"></use>
               </svg>
-              <svg class="toggle__cross" width="16" height="16">
+              <svg class="toggle-cross" width="16" height="16">
                 <use href="/img/sprite.svg#icon-menu-cross"></use>
               </svg>
             </button>
@@ -70,7 +70,7 @@
                 <a class="main-nav__link" href="#reviews">Отзывы</a>
               </li>
               <li class="main-nav__item accordion" data-accordion="element">
-                <a class="accordion__link" href="#" data-accordion="button">
+                <a class="accordion__link" href="#news" data-accordion="button">
                   Новости
                   <svg class="main-nav__icon-menu" width="12" height="12">
                     <use href="./img/sprite.svg#icon-arrow-down"></use>
@@ -469,11 +469,11 @@
           <div class="news__wrapper">
             <h2 class="title">Новости и&nbsp;материалы</h2>
             <div class="news__filter">
-              <button class="news__button is-active" type="button" data-filter="general">Общее</button>
-              <button class="news__button" type="button" data-filter="volunteering">Волонтёрство</button>
-              <button class="news__button" type="button" data-filter="internships">Стажировки</button>
-              <button class="news__button" type="button" data-filter="career">Карьера</button>
-              <button class="news__button" type="button" data-filter="travelling">Путешествия</button>
+              <button class="news__button is-active" type="button" id="general" data-filter="general">Общее</button>
+              <button class="news__button" type="button" id="volunteering" data-filter="volunteering">Волонтёрство</button>
+              <button class="news__button" type="button" id="internships" data-filter="internships">Стажировки</button>
+              <button class="news__button" type="button" id="career" data-filter="career">Карьера</button>
+              <button class="news__button" type="button" id="travelling" data-filter="travelling">Путешествия</button>
             </div>
             <div class="news__swiper">
               <div class="news__list swiper-wrapper">
@@ -506,10 +506,10 @@
                 <div class="news__card travelling swiper-slide">
                   <div class="news__img">
                     <picture>
-                      <source type="image/webp" media="(max-width: 767px)" srcset="./img/news-card-2-mobile.webp 1x, ./img/news-card-2-mobile@2x.webp 2x" width="279" height="145">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="./img/news-card-2-mobile.webp 1x, ./img/news-card-2-mobile@2x.webp 2x" width="290" height="240">
                       <source type="image/webp" media="(max-width: 1199px)" srcset="./img/news-card-2-tablet.webp 1x, ./img/news-card-2-tablet@2x.webp 2x" width="324" height="350">
                       <source type="image/webp" srcset="./img/news-card-2-desktop.webp 1x, ./img/news-card-2-desktop@2x.webp 2x" width="286" height="400">
-                      <source media="(max-width: 767px)" srcset="./img/news-card-2-mobile.jpg 1x, ./img/news-card-2-mobile@2x.jpg 2x" width="279" height="145">
+                      <source media="(max-width: 767px)" srcset="./img/news-card-2-mobile.jpg 1x, ./img/news-card-2-mobile@2x.jpg 2x" width="290" height="240">
                       <source media="(max-width: 1199px)" srcset="./img/news-card-2-tablet.jpg 1x, ./img/news-card-2-tablet@2x.jpg 2x" width="324" height="350">
                       <img src="./img/news-card-2-desktop.jpg" width="286" height="400" srcset="./img/news-card-2-desktop@2x.jpg 2x" alt="Фото набережной" loading="lazy">
                     </picture>
@@ -577,10 +577,10 @@
                 <div class="news__card travelling swiper-slide">
                   <div class="news__img">
                     <picture>
-                      <source type="image/webp" media="(max-width: 767px)" srcset="./img/news-card-2-mobile.webp 1x, ./img/news-card-2-mobile@2x.webp 2x" width="279" height="145">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="./img/news-card-2-mobile.webp 1x, ./img/news-card-2-mobile@2x.webp 2x" width="290" height="240">
                       <source type="image/webp" media="(max-width: 1199px)" srcset="./img/news-card-2-tablet.webp 1x, ./img/news-card-2-tablet@2x.webp 2x" width="324" height="350">
                       <source type="image/webp" srcset="./img/news-card-2-desktop.webp 1x, ./img/news-card-2-desktop@2x.webp 2x" width="286" height="400">
-                      <source media="(max-width: 767px)" srcset="./img/news-card-2-mobile.jpg 1x, ./img/news-card-2-mobile@2x.jpg 2x" width="279" height="145">
+                      <source media="(max-width: 767px)" srcset="./img/news-card-2-mobile.jpg 1x, ./img/news-card-2-mobile@2x.jpg 2x" width="290" height="240">
                       <source media="(max-width: 1199px)" srcset="./img/news-card-2-tablet.jpg 1x, ./img/news-card-2-tablet@2x.jpg 2x" width="324" height="350">
                       <img src="./img/news-card-2-desktop.jpg" width="286" height="400" srcset="./img/news-card-2-desktop@2x.jpg 2x" alt="Фото набережной" loading="lazy">
                     </picture>
@@ -636,31 +636,6 @@
                     <h3>Построй свою карьеру</h3>
                     <div class="news__bottom">
                       <p>Ведущие компании готовы трудоустроить выпускников стажировки</p>
-                      <a class="btn-arrow" href="#" aria-label="Перейти на страницу всех новостей">
-                        <svg width="10" height="10">
-                          <use href="./img/sprite.svg#icon-arrow-btn"></use>
-                        </svg>
-                      </a>
-                    </div>
-                  </article>
-                </div>
-                <!-- Слайд 8 -->
-                <div class="news__card internships swiper-slide">
-                  <div class="news__img">
-                    <picture>
-                      <source type="image/webp" media="(max-width: 767px)" srcset="./img/news-card-1-mobile.webp 1x, ./img/news-card-1-mobile@2x.webp 2x" width="290" height="330">
-                      <source type="image/webp" media="(max-width: 1199px)" srcset="./img/news-card-1-tablet.webp 1x, ./img/news-card-1-tablet@2x.webp 2x" width="324" height="350">
-                      <source type="image/webp" srcset="./img/news-card-1-desktop.webp 1x, ./img/news-card-1-desktop@2x.webp 2x" width="604" height="400">
-                      <source media="(max-width: 767px)" srcset="./img/news-card-1-mobile.jpg 1x, ./img/news-card-1-mobile@2x.jpg 2x"  width="290" height="330">
-                      <source media="(max-width: 1199px)" srcset="./img/news-card-1-tablet.jpg 1x, ./img/news-card-1-tablet@2x.jpg 2x" width="324" height="350">
-                      <img src="./img/news-card-1-desktop.jpg" width="604" height="400" srcset="./img/news-card-1-desktop@2x.jpg 2x" alt="Фото Интервью" loading="lazy">
-                    </picture>
-                  </div>
-                  <article class="news__text">
-                    <time datetime="2023-03-23">23/03/2023</time>
-                    <h3>Интервью с&nbsp;участницей программы стажировки</h3>
-                    <div class="news__bottom">
-                      <p>Саша рассказывает, как попала в&nbsp;программу и&nbsp;как прошла 6-месячная стажировка в&nbsp;ISOFound</p>
                       <a class="btn-arrow" href="#" aria-label="Перейти на страницу всех новостей">
                         <svg width="10" height="10">
                           <use href="./img/sprite.svg#icon-arrow-btn"></use>
@@ -959,7 +934,7 @@
                     <span class="custom-toggle__label">Я&nbsp;согласен на&nbsp;обработку моих персональных данных</span>
                   </label>
                 </div>
-                <button class="feedback__button btn--blue" type="submit">
+                <button class="feedback__button btn btn--blue" type="submit">
                   Отправить
                   <svg width="10" height="10">
                     <use href="./img/sprite.svg#icon-arrow-btn"></use>
@@ -1039,15 +1014,15 @@
     <div class="modal__wrapper">
       <div class="modal__overlay" data-close-modal></div>
       <div class="modal__content">
-        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-          <svg class="toggle__cross" width="22" height="22">
+        <button class="modal__close-btn" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="22" height="22">
             <use href="/img/sprite.svg#icon-menu-cross"></use>
           </svg>
         </button>
         <div class="modal__form" data-form-validate="data-form-validate" data-callback="base">
           <form action="https://echo.htmlacademy.ru/" method="post" autocomplete="off" novalidate>
             <h2>Напишите нам</h2>
-            <p>Оставьте ваши контакты, если у&nbsp;вас остались вопросы&nbsp;&mdash; мы&nbsp;на&nbsp;них ответим!</p>
+            <p>Оставьте ваши контакты, если&nbsp;у&nbsp;вас остались вопросы&nbsp;&mdash; мы&nbsp;на&nbsp;них ответим!</p>
             <div class="custom-input custom-input--modal" data-validate-type="text" data-limitation="name" data-required>
               <label>Имя
                 <input type="text" name="name" pattern="^[а-яА-ЯёЁa-zA-Z\-]+$" autofocus data-focus>
@@ -1084,7 +1059,7 @@
             </div>
             <button class="modal__button btn" type="submit">
               Отправить
-              <svg width="10" height="10" aria-hidden="true" focusable="false">
+              <svg width="10" height="10">
                 <use href="./img/sprite.svg#icon-arrow-btn"></use>
               </svg>
             </button>

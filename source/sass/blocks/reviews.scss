@@ -3,23 +3,27 @@
 }
 
 .reviews__wrapper {
-  padding: 120px 0;
+  padding: 123px 0 120px;
   position: relative;
 
   @include vp-1199 {
-    padding: 100px 0;
+    padding: 99px 0 101px;
   }
 
   @include vp-767 {
-    padding: 67px 0;
+    padding: 70px 0 67px;
   }
 }
 
 .reviews__wrapper h2 {
-  margin: 0 0 40px 0;
+  margin: 0 0 46px 3px;
+
+  @include vp-1199 {
+    margin: 0 0 41px 0;
+  }
 
   @include vp-767 {
-    margin: 0 0 30px 0;
+    margin: 0 0 32px 0;
   }
 }
 
@@ -37,19 +41,21 @@
 
 .reviews__card {
   height: auto;
-  padding: 50px;
+  padding: 50px 50px 42px 50px;
   border: 1px solid $cerulean-blue;
   border-radius: 16px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 24px;
 
   @include vp-1199 {
-    padding: 50px 49px;
+    padding: 49px 49px 45px 49px;
+    gap: 25px;
   }
 
   @include vp-767 {
-    padding: 30px 14px;
+    padding: 29px 14px 24px 14px;
+    gap: 24px;
   }
 }
 
@@ -60,7 +66,7 @@
   @include vp-767 {
     justify-content: center;
     flex-direction: column;
-    gap: 15px;
+    gap: 11px;
   }
 }
 
@@ -106,18 +112,25 @@
 }
 
 .reviews__info {
+  margin-top: 3px;
   display: grid;
   grid-template-columns: auto auto;
   gap: 25px;
   align-items: center;
 
+  @include vp-1199 {
+    margin-right: 1px;
+    gap: 26px;
+  }
+
   @include vp-767 {
     max-width: 80%;
+    gap: 18px;
   }
 }
 
 .reviews__info h4 {
-  margin: 0 0 11px 0;
+  margin: 0;
   color: $cerulean-blue;
   font-family: inherit;
   font-size: 12px;
@@ -128,12 +141,12 @@
   text-transform: uppercase;
 
   @include vp-767 {
-    margin-bottom: 8px;
+    margin-bottom: 7px;
   }
 }
 
 .reviews__info p {
-  margin: 0;
+  margin: 5px 0 0 0;
   color: inherit;
   font-family: inherit;
   font-size: 14px;
@@ -152,8 +165,9 @@
 }
 
 .reviews__text b {
+  max-width: 509px;
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   color: $cerulean-blue;
   font-family: inherit;
   font-size: 24px;
@@ -162,6 +176,7 @@
   line-height: 26px;
 
   @include vp-1199 {
+    margin-bottom: 16px;
     font-size: 20px;
     line-height: 24px;
   }
@@ -169,6 +184,7 @@
   @include vp-767 {
     font-size: 16px;
     line-height: 18px;
+    margin-bottom: 15px;
   }
 }
 
@@ -197,10 +213,14 @@
   align-items: center;
   gap: 0 52px;
 
+  @include vp-1199 {
+    margin-top: 39px;
+  }
+
   @include vp-767 {
     position: absolute;
     margin-top: 0;
-    top: 67px;
+    top: 68px;
     right: 1px;
   }
 }
