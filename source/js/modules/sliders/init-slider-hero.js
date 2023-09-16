@@ -1,10 +1,10 @@
 const Swiper = global.Swiper;
 
-
 const initHeroSwiper = () => new Swiper('.hero__swiper', {
 
   pagination: {
     el: '.hero__pagination',
+    type: 'bullets',
     clickable: true,
   },
 
@@ -16,6 +16,7 @@ const initHeroSwiper = () => new Swiper('.hero__swiper', {
   },
 
   initialSlide: 2,
+
 });
 
 export {initHeroSwiper};

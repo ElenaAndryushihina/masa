@@ -1,33 +1,18 @@
 .custom-input,
 .custom-textarea {
-  position: relative;
-  display: flex;
-
   label {
-    color: rgba($alabaster, 0.8);
-    font-family: inherit;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 18px;
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-bottom: 16px;
     gap: 8px;
-
-    @include vp-767 {
-      font-size: 12px;
-      line-height: 14px;
-      margin-bottom: 20px;
-      gap: 12px;
-    }
+    margin-bottom: 8px;
 
     &:hover,
-    &:focus,
-    &:focus-within,
-    &:active {
-      color: rgba($alabaster, 1);
+    &:focus-within {
+      .custom-input__label,
+      .custom-textarea__label {
+        opacity: 1;
+      }
 
       input:not(:disabled),
       textarea:not(:disabled) {
@@ -36,7 +21,10 @@
     }
 
     &:has(input:disabled, textarea:disabled) {
-      color: rgba($alabaster, 0.8);
+      .custom-input__label,
+      .custom-textarea__label {
+        opacity: 0.8;
+      }
 
       input,
       textarea {
@@ -56,41 +44,50 @@
 
     input,
     textarea {
-      padding: 16px 25px;
-      min-height: 50px;
+      padding: 14px 20px 15px;
+      font-size: 14px;
+      line-height: 14px;
+      color: $color-default-white;
+      background-color: $color-transparent;
       border: 1px solid rgba($color-default-white, 0.3);
       border-radius: 8px;
       outline: none;
-      color: $color-default-white;
-      background-color: $color-transparent;
       transition: border $trans-default;
+      cursor: text;
     }
   }
 
-  &.is-invalid {
-    input,
-    textarea {
-      background: rgba($error, 0.2);
-      border: 1px solid $error;
+  .custom-input__label,
+  .custom-textarea__label {
+    color: $alabaster;
+    opacity: 0.8;
+    font-family: inherit;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+
+    @include vp-1199 {
+      line-height: 20px;
+    }
+
+    @include vp-767 {
+      font-size: 12px;
+      line-height: 14px;
     }
   }
 }
 
 .custom-input--modal {
   label {
-    color: rgba($charcoal, 0.8);
-
     @include vp-767 {
       gap: 8px;
       margin-bottom: 15px;
-      font-size: 14px;
     }
 
     &:hover,
-    &:focus,
-    &:focus-within,
-    &:active {
-      color: rgba($charcoal, 1);
+    &:focus-within {
+      opacity: 1;
 
       input:not(:disabled) {
         border-color: rgba($charcoal, 1);
@@ -111,10 +108,32 @@
       color: inherit;
       border-color: rgba($charcoal, 0.3);
 
+      &:focus-visible {
+        border-color: rgba($charcoal, 1);
+      }
+
       @include vp-767 {
         min-height: 44px;
-        padding: 12px 25px;
+        padding: 11px 20px 12px;
       }
     }
+  }
+
+  .custom-input__label {
+    color: $charcoal;
+    opacity: 0.8;
+
+    @include vp-767 {
+      font-size: 14px;
+    }
+  }
+}
+
+.custom-input.is-invalid,
+.custom-textarea.is-invalid {
+  input,
+  textarea {
+    background: rgba($error, 0.2);
+    border: 1px solid $error;
   }
 }

@@ -134,6 +134,21 @@
   }
 }
 
+.main-nav__sub-list {
+  visibility: hidden;
+  margin: 0 0 0 16px;
+  width: 100%;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: 0.8s;
+
+  .main-nav__link--current {
+    color: rgba($color-default-white, 1);
+  }
+}
+
 .main-nav__item {
   width: fit-content;
 }
@@ -160,17 +175,8 @@
   }
 
   .main-nav__sub-list {
-    margin: 16px 0 1px 16px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    transition: 0.8s;
-    overflow-y: auto;
-
-    .main-nav__link--current {
-      color: rgba($color-default-white, 1);
-    }
+    margin-top: 16px;
+    visibility: visible;
   }
 }
 

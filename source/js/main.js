@@ -11,6 +11,15 @@ import {initReviewsSwiper} from './modules/sliders/init-slider-reviews';
 import {initContactsMap} from './modules/maps/init-contacts-map';
 import {initFilter} from './modules/filter/init-filter';
 
+// const modalOpen = document.querySelector('.modal.is-acive');
+// if (modalOpen) {
+const setFocus = () => {
+  document.getElementById('name').focus();
+};
+
+setFocus();
+// }
+
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {

@@ -72,6 +72,12 @@
   }
 }
 
+.contacts__sub-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .contacts__item h3 {
   margin: 0 0 14px 0;
   color: rgba($alabaster, 0.8);
@@ -138,8 +144,13 @@
   margin-top: 40px;
   border-radius: 16px;
   outline: none;
+  overflow: hidden;
 
   @include vp-1199 {
     margin-top: 30px;
   }
+}
+
+.contacts__map img {
+  border-radius: 16px;
 }

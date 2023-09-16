@@ -7,7 +7,7 @@
   &:hover,
   &:focus-within,
   &:active {
-    label {
+    &__label {
       color: rgba($alabaster, 1);
     }
 
@@ -17,7 +17,7 @@
   }
 
   &:has(.custom-select__button:disabled) {
-    label {
+    .custom-select__label {
       color: rgba($alabaster, 0.8);
     }
 
@@ -28,7 +28,7 @@
     }
   }
 
-  label {
+  &__label {
     color: rgba($alabaster, 0.8);
     font-family: inherit;
     font-size: 14px;
@@ -216,7 +216,7 @@
   &:hover,
   &:focus-within,
   &:active {
-    label {
+    .custom-select__label--modal {
       color: rgba($charcoal, 1);
     }
 
@@ -226,7 +226,7 @@
   }
 
   &:has(.custom-select__button:disabled) {
-    label {
+    .custom-select__label--modal {
       color: rgba($charcoal, 0.8);
     }
 
@@ -237,7 +237,7 @@
     }
   }
 
-  label {
+  .custom-select__label--modal {
     color: rgba($charcoal, 0.8);
     margin: 0 0 8px 0;
 
