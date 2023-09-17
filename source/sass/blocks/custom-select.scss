@@ -7,7 +7,7 @@
   &:hover,
   &:focus-within,
   &:active {
-    &__label {
+    .custom-select__label {
       color: rgba($alabaster, 1);
     }
 
@@ -35,7 +35,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 18px;
-    margin: 2px 0 10px 0;
+    margin: 3px 0 10px 0;
 
     @include vp-1199 {
       margin: 1px 0 8px 0;
@@ -241,8 +241,13 @@
     color: rgba($charcoal, 0.8);
     margin: 0 0 8px 0;
 
+    @include vp-1199 {
+      margin: 1px 0 8px 0;
+    }
+
     @include vp-767 {
       font-size: 14px;
+      margin: 0 0 8px 0;
     }
   }
 
