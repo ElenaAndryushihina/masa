@@ -4010,6 +4010,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 12px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -4041,31 +4042,29 @@ button,
   }
 }
 
-.hero__pagination .swiper-pagination-bullet {
-  position: absolute;
+.hero__bullet {
   width: 10px;
   height: 10px;
   background-color: rgba(255, 255, 255, 0);
   border-radius: 50%;
   border: 1px solid #316dc2;
-  opacity: 1;
   outline: none;
-  --swiper-pagination-bullet-horizontal-gap: 6px;
+  cursor: pointer;
 }
-.hero__pagination .swiper-pagination-bullet:hover:not(:disabled), .hero__pagination .swiper-pagination-bullet:focus-visible:not(:disabled) {
+.hero__bullet:hover:not(:disabled), .hero__bullet:focus-visible:not(:disabled) {
   border: 1px solid #316dc2;
 }
-.hero__pagination .swiper-pagination-bullet:active:not(:disabled) {
+.hero__bullet:active:not(:disabled) {
   background-color: #316dc2;
 }
-.hero__pagination .swiper-pagination-bullet:disabled:not(:focus) {
+.hero__bullet:disabled:not(:focus) {
   opacity: 0.1;
 }
-.hero__pagination .swiper-pagination-bullet-active {
+.hero__bullet.active {
   background-color: #316dc2;
 }
 @media (max-width: 767px) {
-  .hero__pagination .swiper-pagination-bullet {
+  .hero__bullet {
     width: 8px;
     height: 8px;
   }

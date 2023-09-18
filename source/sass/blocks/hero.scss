@@ -56,6 +56,7 @@
   background-color: $color-default-white;
   border-radius: 20px 20px 0 0;
   display: flex;
+  gap: 12px;
   align-items: center;
   justify-content: center;
 
@@ -82,16 +83,14 @@
   }
 }
 
-.hero__pagination .swiper-pagination-bullet {
-  position: absolute;
+.hero__bullet {
   width: 10px;
   height: 10px;
   background-color: $color-transparent;
   border-radius: 50%;
   border: 1px solid $cerulean-blue;
-  opacity: 1;
   outline: none;
-  --swiper-pagination-bullet-horizontal-gap: 6px;
+  cursor: pointer;
 
   &:hover:not(:disabled),
   &:focus-visible:not(:disabled) {
@@ -106,7 +105,7 @@
     opacity: 0.1;
   }
 
-  &-active {
+  &.active {
     background-color: $cerulean-blue;
   }
 
